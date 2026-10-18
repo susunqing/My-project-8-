@@ -1,33 +1,22 @@
-using System.Collections;
+ using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
     private Player player;
-
-    IEnumerator Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        yield return null;
+        player = GameManager.Instance.player;
+        player.enemyList.Add(this);
 
-        if (GameManager.Instance == null)
-        {
-            Debug.LogError("GameManager.Instance 为空！");
-            yield break;
-        }
+    }
 
-            player = GameManager.Instance.player;
+    // Update is called once per frame
+    void Update()
+    {
 
-        if (player == null)
-        {
-            Debug.LogError("player为空");
-            yield break;
-        }
-
-        if (player.enemyList != null)
-        {
-            player.enemyList.Add(this);
-        }
-
-        Debug.Log(player.transform.position);
     }
 }

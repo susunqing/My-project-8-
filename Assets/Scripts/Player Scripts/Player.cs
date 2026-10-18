@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     public List<Enemy> enemyList;
     private void Awake()
     {//Debug.Log("Player OnEnable");
-        
+
         //数据初始化
         Hp = maxHp = 100;
         //Hp = 0;
@@ -41,15 +41,15 @@ public class Player : MonoBehaviour
     //测试
     private void OnEnable()
     {//Debug.Log("Player OnEnable");
-    //    GameManager.Instance.player = this;
-    //    //数据初始化
-    //    Hp = maxHp = 100;
-    //    //Hp = 0;
-    //    speed = 2;
-    //    regentHpSpeed = delayRegen = 1;
-    //    audioSource = GetComponent<AudioSource>();
-    //    playerRig = GetComponent<Rigidbody2D>();
-    //    enemyList = new List<Enemy>();
+     //    GameManager.Instance.player = this;
+     //    //数据初始化
+     //    Hp = maxHp = 100;
+     //    //Hp = 0;
+     //    speed = 2;
+     //    regentHpSpeed = delayRegen = 1;
+     //    audioSource = GetComponent<AudioSource>();
+     //    playerRig = GetComponent<Rigidbody2D>();
+     //    enemyList = new List<Enemy>();
 
 
 
@@ -58,11 +58,11 @@ public class Player : MonoBehaviour
     }
     private void Start()
     {
-        Debug.Log("Player Start执行");
+       
 
         GameManager.Instance.player = this;
 
-        Debug.Log("注册完成");
+        
 
 
     }
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
     {
         if (Keyboard.current.wKey.isPressed)
         {
-            playerRig.AddForce(new Vector2 (0, speed)*Time.deltaTime*60);
+            playerRig.AddForce(new Vector2(0, speed) * Time.deltaTime * 60);
             moveAngle = 0;
         }
         if (Keyboard.current.aKey.isPressed)
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
         }
         transform.rotation = Quaternion.Euler(0, 0, moveAngle);
     }
-   void Update()
+    void Update()
     {
         PlayerMove();
 
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
     /// </summary>
     private void RegentHP()
     {
-        if (delayTimer<=0 && Hp < maxHp)
+        if (delayTimer <= 0 && Hp < maxHp)
         {
             Hp += regentHpSpeed * Time.deltaTime;
             if (Hp > maxHp)
@@ -110,8 +110,9 @@ public class Player : MonoBehaviour
                 Hp = maxHp;
             }
         }
-        else if (delayTimer > 0){
-           delayTimer-=Time.deltaTime;
+        else if (delayTimer > 0)
+        {
+            delayTimer -= Time.deltaTime;
 
         }
 

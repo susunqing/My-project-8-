@@ -13,51 +13,31 @@ public class PlayerAiM : MonoBehaviour
     private Player player;
     private Enemy neraEnemy;//最近的敌人
     private RaycastHit2D hit;//定义一个射线
-
+    private int layValue;
     // Start is called before the first frame update
     void Start()
     {
-        if (GameManager.Instance != null)
-        {
-            player = GameManager.Instance.player;
-        }
-        if (mark != null)
-        {
-            mark.SetActive(false);
-        }
-        minDistance = maxDistance = 10;
+        player = GameManager.Instance.player;
+        mark.SetActive(false);
+        minDistance = maxDistance = 0;
+        layValue = 1 << 10;//定义一个layvalue变量，表示敌人所在的层级
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 尝试重新获取 player，防止 Start 执行时 GameManager 还未准备好
-        if (player == null)
-        {
-            if (GameManager.Instance != null)
-            {
-                player = GameManager.Instance.player;
-            }
-            return; // player 为空时不继续执行
-        }
-
-        if (player.enemyList == null) return;
-
         for (int i = 0; i < player.enemyList.Count; i++)
         {
-            if (player.enemyList[i] == null) continue; // 跳过空的敌人
-
-            hit = Physics2D.Raycast(player.transform.position,
-                player.enemyList[i].transform.position - player.transform.position);
-
-            if (hit.collider != null)
+            hit = Physics2D.Raycast(transform.position,
+                player.enemyList[i].transform.position - player.transform.position,200f,layValue);
+            Debug.Log(hit.collider);
+            if (hit.collider != null)     
             {
-                if (mark != null)
-                {
-                    mark.SetActive(true);
-                    mark.transform.position = hit.collider.transform.position;
-                }
+                mark.SetActive(true);
+                mark.transform.position = hit.collider.transform.position;     
             }
+
+
         }
     }
 }

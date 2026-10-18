@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    // Start is called before the first frame update
     //单例
     public static GameManager Instance { get; private set; }
     //玩家数据
@@ -16,18 +18,10 @@ public class GameManager : MonoBehaviour
     //系统设置
     public float volume;
     public float joystickSize;
-
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     /// <summary>
@@ -58,7 +52,8 @@ public class GameManager : MonoBehaviour
         else { volume = 0; }
         if (PlayerPrefs.HasKey("JoyStick"))
         {
-            joystickSize = PlayerPrefs.GetFloat("JoyStick");
+            joystickSize = PlayerPrefs.GetFloat("JiyStick");
+
         }
         else
         {

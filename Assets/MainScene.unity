@@ -276,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277575805}
   - component: {fileID: 277575806}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RIghtLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316915109}
   - component: {fileID: 316915110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MinimapIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 330530143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434199295}
   - component: {fileID: 434199296}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 579467763}
   - component: {fileID: 579467767}
   - component: {fileID: 579467766}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Andrw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 594879916}
   - component: {fileID: 594879917}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 648414869}
   - component: {fileID: 648414870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711051525}
   - component: {fileID: 711051526}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AK
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1056,7 +1056,7 @@ GameObject:
   m_Component:
   - component: {fileID: 745841405}
   - component: {fileID: 745841406}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1140,7 +1140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1002396609}
   - component: {fileID: 1002396610}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'MinimapIcon '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1224,7 +1224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350596603}
   - component: {fileID: 1350596604}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1308,7 +1308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548802338}
   - component: {fileID: 1548802339}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Shadow '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 1550837696}
   - component: {fileID: 1550837698}
   - component: {fileID: 1550837697}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6234,7 +6234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757996402}
   - component: {fileID: 1757996403}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6318,7 +6318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1771399270}
   - component: {fileID: 1771399271}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6401,7 +6401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1803803812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6436,7 +6436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1882798669}
   - component: {fileID: 1882798670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Snipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6521,7 +6521,7 @@ GameObject:
   - component: {fileID: 2034403610}
   - component: {fileID: 2034403609}
   - component: {fileID: 2034403611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6603,7 +6603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134848924}
   - component: {fileID: 2134848925}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
