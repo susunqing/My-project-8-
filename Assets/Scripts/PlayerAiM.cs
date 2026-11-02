@@ -26,6 +26,7 @@ public class PlayerAiM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         for (int i = 0; i < player.enemyList.Count; i++)
         {
             hit = Physics2D.Raycast(transform.position,
